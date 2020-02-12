@@ -1,7 +1,5 @@
 package my.work.Exercises;
 
-import my.work.APP.Function;
-
 public class Exercise13 {
     public static void run() {
         int[] numbs = {2, 5, 1, 9, 11, 12, 8, 7};

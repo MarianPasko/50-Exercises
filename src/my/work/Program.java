@@ -1,15 +1,15 @@
 package my.work;
 
-import my.work.APP.Function;
 import my.work.APP.Menu;
 import my.work.Exercises.*;
+import java.util.Scanner;
 
 
 public abstract class Program {
     public static void main(String[] args) {
         Menu.getMenu();
         System.out.print("Enter exercise number: ");
-        String input = Function.readInput();
+        String input = readInput();
         switch (input) {
             case "1" -> Exercise1.run();
             case "2" -> Exercise2.run();
@@ -64,6 +64,12 @@ public abstract class Program {
             default -> System.out.println("unknown option");
         }
     }
+
+    public static String readInput() {
+        var scanner = new Scanner(System.in);
+        return scanner.nextLine();
+    }
+
 //
 //        // Exercises 50 - Vytvor tkinter GUI aplikáciu s jedným tlačidlom. Kliknutím na tlačidlo sa aplikácia ukončí.
 //        // Exercises 49 - Pomocou knižnice numpy vypočítaj súčin dvoch ľubovolných 3x3 matíc.
