@@ -6,12 +6,10 @@ import my.work.Exercises.*;
 
 
 public abstract class Program {
-
     public static void main(String[] args) {
         Menu.getMenu();
         System.out.print("Enter exercise number: ");
-        var input = Function.readInput();
-
+        String input = Function.readInput();
         switch (input) {
             case "1" -> Exercise1.run();
             case "2" -> Exercise2.run();
@@ -63,7 +61,6 @@ public abstract class Program {
 //            case "48" -> Exercise48.run();
 //            case "49" -> Exercise49.run();
 //            case "50" -> Exercise50.run();
-
             default -> System.out.println("unknown option");
         }
     }
