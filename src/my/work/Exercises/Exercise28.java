@@ -4,15 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Exercise28 {
-
     public static void run() {
-        code();
-    }
-    private static void code(){
         int[] arabic = {23, 168, 997, 1455, 3999};
         int y = 0;
         List<String> numb = new ArrayList<String>();
-
         for (int x : arabic) {
             y = x;
             while (y >= 1000) {

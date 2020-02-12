@@ -1,14 +1,10 @@
 package my.work.Exercises;
 
 public class Exercise24 {
-
-    public static void run(){
-    code();
-}
-
-    private static void code() {
-        String msg = "Today is a beautiful day";
-        System.out.println("Number of vowels in the string = " + vowels(msg));
+    public static void run() {
+        String msg = "Today is a beautiful day.";
+        System.out.printf("Message is : %s", msg);
+        System.out.printf("Number of vowels in the message = %s", vowels(msg));
     }
 
     private static int vowels(String msg) {
@@ -20,5 +16,4 @@ public class Exercise24 {
         }
         return x;
     }
-
 }

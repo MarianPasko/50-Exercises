@@ -9,7 +9,7 @@ public abstract class Program {
 
     public static void main(String[] args) {
         Menu.getMenu();
-        System.out.println("Zadajte cislo ulohy :");
+        System.out.print("Enter exercise number: ");
         var input = Function.readInput();
 
         switch (input) {

@@ -1,7 +1,5 @@
 package my.work.Exercises;
 
-import my.work.APP.Function;
-
 public class Exercise12 {
 
     public static void run() {
@@ -15,7 +13,7 @@ public class Exercise12 {
         for (int z : y) {
             sum += z;
         }
-        System.out.printf("Sucet cisiel je : %s", sum);
+        System.out.printf("The sum of numbers is : %s", sum);
     }
 }
 
