@@ -1,7 +1,0 @@
-package my.work.Exercises;
-
-public class Exercise1 {
-    public static void run() {
-        System.out.println("Java version : " + System.getProperty("java.version"));
-    }
-}

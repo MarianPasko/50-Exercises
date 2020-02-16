@@ -1,12 +1,14 @@
 package my.work;
 
-import my.work.APP.Menu;
-import my.work.Exercises.*;
+import my.work.menu.Menu;
+import my.work.exercises.*;
+
+import java.io.IOException;
 import java.util.Scanner;
 
 
 public abstract class Program {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         Menu.getMenu();
         System.out.print("Enter exercise number: ");
         String input = readInput();
@@ -37,14 +39,14 @@ public abstract class Program {
             case "24" -> Exercise24.run();
             case "25" -> Exercise25.run();
 //            case "26" -> Exercise26.run();
-//            case "27" -> Exercise27.run();
+            case "27" -> Exercise27.run();
             case "28" -> Exercise28.run();
-//            case "29" -> Exercise29.run();
-//            case "30" -> Exercise30.run();
-//            case "31" -> Exercise31.run();
+            case "29" -> Exercise29.run();
+            case "30" -> Exercise30.run();
+            case "31" -> Exercise31.run();
 //            case "32" -> Exercise32.run();
 //            case "33" -> Exercise33.run();
-//            case "34" -> Exercise34.run();
+            case "34" -> Exercise34.run();
 //            case "35" -> Exercise35.run();
 //            case "36" -> Exercise36.run();
             case "37" -> Exercise37.run();
@@ -83,15 +85,9 @@ public abstract class Program {
 //        // Exercises 41 - Vypíš hexadecimálny výstup z malého PNG obrázka. Výstup bude mať desať stĺpcov oddelených medzerou.
 //        // Exercises 40 - Vypíš obsah titulku zo stránky learnpython.pro (zo značky title).
 //        // Exercises 39 - Naištaluj si pomocou nástroja pip modul psutil a zisti pomocou neho veľkosť operačnej pamäte svojho počítača.
-//        // Exercises 37 - Vygeneruj plochý zoznam zo zoznamu zoznamov (napr. [[1, 2], [3, 4], [5, 6], [7]] => [1, 2, 3, 4, 5, 6, 7]).
 //        // Exercises 36 - Zisti koľko dní ubehlo od bitky pri Borodine.
 //        // Exercises 35 - Zisti počet dní do Vianoc (25.12.).
-//        // Exercises 34 - Vypýtaj si od užívateľa veľkosť polomeru a vypočítaj obvod a obsah kruhu.
 //        // Exercises 33 - Vypíš obsah svojho domovského adresára.
 //        // Exercises 32 - Vypíš názov svojho domovského adresára.
-//        // Exercises 31 - Zisti veľkosť súboru thermopylae.txt v bajtoch a kilobajtoch.
-//        // Exercises 30 - Skopíruj súbor thermopylae.txt do súboru thermopylae2.txt.
-//        // Exercises 29 - Načítaj súbor thermopylae.txt a vypíš jeho obsah.
-//        // Exercises 27 - Zaokrúhli výraz 334/5000 na dve a tri desatinné miesta.
 //        // Exercises 26 - Majme n-ticu ('Martin', 'Lucy', 'Peter', 'Martin', 'Robert', 'Peter'). Vytvor z nej novú n-ticu bez duplikátov.
     }
